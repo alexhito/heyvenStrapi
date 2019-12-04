@@ -5,6 +5,7 @@
   "description": "A Strapi application",
   "scripts": {
     "start": "strapi start",
+    "dev": "strapi develop",
     "prod": "cross-env NODE_ENV=production npm start",
     "build": "strapi build",
     "strapi": "strapi"
