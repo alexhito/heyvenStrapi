@@ -1,0 +1,106 @@
+{
+  "connection": "default",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "restaurant",
+    "description": "A little restaurants for app"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
+    "comment": ""
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": true
+    },
+    "photos": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "category": {
+      "model": "category",
+      "via": "restaurants"
+    },
+    "representant": {
+      "type": "string"
+    },
+    "RUC": {
+      "type": "biginteger"
+    },
+    "Address": {
+      "type": "string"
+    },
+    "Province": {
+      "type": "string"
+    },
+    "Category": {
+      "type": "string"
+    },
+    "Services": {
+      "type": "string"
+    },
+    "Payment": {
+      "type": "string"
+    },
+    "Mobile": {
+      "type": "biginteger"
+    },
+    "Phone": {
+      "type": "biginteger"
+    },
+    "Social_Networks": {
+      "type": "string"
+    },
+    "cover_photo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "featured_photos": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "Geolocation": {
+      "type": "string"
+    },
+    "Monday": {
+      "type": "string"
+    },
+    "thuesday": {
+      "type": "string"
+    },
+    "Wednesday": {
+      "type": "string"
+    },
+    "Thursday": {
+      "type": "string"
+    },
+    "Friday": {
+      "type": "string"
+    },
+    "saturday": {
+      "type": "string"
+    },
+    "sunday": {
+      "type": "string"
+    }
+  }
+}
